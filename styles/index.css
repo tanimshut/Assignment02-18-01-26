@@ -1,0 +1,298 @@
+/* font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* shared style part start */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.df {
+  display: flex;
+}
+.responsive {
+  display: none;
+}
+
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --bg: rgba(26, 11, 46, 1);
+  --green: rgba(0, 255, 136, 1);
+  --bg2: rgba(35, 14, 61, 1);
+}
+
+.primary-title {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.secondary-title {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 16px 0;
+}
+
+.primary-text {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.btn-primary {
+  border-radius: 10000px;
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+  padding: 12px 16px 12px 16px;
+  border: none;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .primary-title{
+        font-size: 2rem;
+    }
+
+    .secondary-title{
+        font-size: 1.5rem;
+    }
+}
+/* shared style part end */
+
+/* header part start */
+.header-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background: var(--bg);
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+.nav-links {
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.banner-contaier {
+  background: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 760px;
+}
+
+.banner-img {
+}
+
+.hero-circle {
+  position: relative;
+  top: 100px;
+  left: 503px;
+  z-index: 1;
+}
+.microphone {
+  position: relative;
+  left: 740px;
+  z-index: 2;
+}
+
+.banner-content {
+  justify-items: center;
+  padding-top: 140px;
+}
+
+.banner-title {
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.btn-group {
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.btn-group .btn2 {
+  box-sizing: border-box;
+  border: 1px solid var(--green);
+  border-radius: 10000px;
+  color: var(--green);
+  background: none;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-content {
+    padding: 20px;
+  }
+
+  .nav-logo {
+    width: 140px;
+  }
+
+  .responsive {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-content .btn-primary {
+    display: none;
+  }
+}
+/* header part end */
+
+/* podcast part start */
+.podcast-container {
+  background: var(--bg);
+  padding: 50px 200px 120px;
+}
+
+.podcast-container .primary-text {
+  text-align: center;
+  margin-top: 16px;
+}
+
+hr {
+  opacity: 0.1;
+  margin: 80px 0;
+}
+
+.podcast-card {
+  justify-content: space-between;
+}
+
+.card {
+  width: 240px;
+}
+
+.card .primary-title {
+  color: var(--green);
+}
+
+.card .primary-text {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .podcast-container{
+    padding: 40px 20px;
+  }
+
+  .podcast-card {
+    flex-wrap: wrap;
+  }
+  .primary-title {
+    font-size: 2rem;
+  }
+  .card {
+    width: 180px;
+  }
+  .card .primary-title {
+    font-size: 2.5rem;
+  }
+}
+/* podcast part end */
+
+/* techwave part start */
+.techwave-container {
+  background: var(--bg2);
+  padding: 120px 200px;
+}
+
+.techwave-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.techwave-card {
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 40px;
+}
+
+.techwave-card .primary-text{
+line-height: 25px;
+}
+
+.tc1 {
+  grid-row: span 2;
+  padding: 107px 40px;
+}
+
+.tc2,
+.tc3 {
+  grid-column: span 2;
+}
+
+.tc4 {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 576px){
+    .techwave-container{
+        padding: 40px 20px;
+    }
+    
+    
+.techwave-card-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.techwave-card{
+    padding: 24px;
+    border-radius: 24px;
+}
+}
+/* techwave part end */
+/* featured part start */
+
+/* featured part end */
+/* part start */
+
+/* part end */
+/* part start */
+
+/* part end */
+/* part start */
+
+/* part end */
