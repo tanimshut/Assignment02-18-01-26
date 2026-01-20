@@ -114,8 +114,7 @@ body {
   height: 760px;
 }
 
-
-.hero-circle {
+/* .hero-circle {
   position: relative;
   top: 100px;
   left: 503px;
@@ -125,11 +124,28 @@ body {
   position: relative;
   left: 740px;
   z-index: 2;
+} */
+
+.hero-img {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-new {
+  position: relative;
+  z-index: 2;
+  top: 100px;
+  left: 240px;
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
 }
 
 .banner-content {
   justify-items: center;
-  padding-top: 140px;
+  padding-top: 40px;
 }
 
 .banner-title {
@@ -172,6 +188,25 @@ body {
   .nav-content .btn-primary {
     display: none;
   }
+
+  .hero-img img {
+    width: 240px;
+    margin-top: -40px;
+  }
+
+  .hero-new {
+    top: 50px;
+    left: 160px;
+  }
+
+  .banner-contaier {
+    height: 500px;
+    padding: 20px;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
 }
 /* header part end */
 
@@ -209,7 +244,7 @@ hr {
 
 @media screen and (max-width: 576px) {
   .podcast-container {
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
   .podcast-card {
@@ -288,146 +323,164 @@ hr {
 }
 
 .episode-card-contaier {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px; 
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .episode-card {
-    width: 380px;
-  border-radius:24px;
+  width: 380px;
+  border-radius: 24px;
   background: rgba(37, 13, 68, 1);
 }
 
-.video{
-    border-radius: 24px 24px 0 0;
+.video {
+  border-radius: 24px 24px 0 0;
 }
 
-.episode-card-content{
-    padding: 24px;
+.episode-card-content {
+  padding: 24px;
 }
 
-.episode-card-content > .primary-text{
-    padding: 12px 0;
+.episode-card-content > .primary-text {
+  padding: 12px 0;
 }
 
-.clock{
-  
-    align-items: center;
-    gap: 6px;
+.clock {
+  align-items: center;
+  gap: 6px;
 }
-.clock .primary-text{
+.clock .primary-text {
   color: var(--green);
 }
 
-.host-card-container{
-    margin-top: 120px;
-    
-    
+.host-card-container {
+  margin-top: 120px;
 }
 
-.host-card{
-    margin-top: 40px;
-    padding: 40px;
-    gap: 24px;
-    border-radius: 40px;
-background: rgba(53, 17, 101, 0.4);
+.host-card {
+  margin-top: 40px;
+  padding: 40px;
+  gap: 24px;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
 }
 
-.host-title{
-    color: var(--white);
-    font-size: 2rem;
-font-weight: 700;
+.host-title {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.host-card .primary-text{
-    padding: 16px 0;
+.host-card .primary-text {
+  padding: 16px 0;
 }
 
-.host-content-img{
-gap: 8px;
+.host-content-img {
+  gap: 8px;
 }
 
-.icon{
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-sizing: border-box;
-border: 1px solid rgba(83, 60, 114, 1);
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgba(83, 60, 114, 1);
 }
-
 
 @media screen and (max-width: 576px) {
- .featured-container{
-  padding: 40px 20px;
- }
-  
-  .episode-card-contaier{
+  .featured-container {
+    padding: 40px 20px;
+  }
+
+  .episode-card-contaier {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .host-card{
+  .host-card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    }
+  }
 
-    .host-content-img{
-      justify-content: center;
-    }
+  .host-content-img {
+    justify-content: center;
+  }
 }
 
 /* featured part end */
 /*footer part start */
-.footer-container{
-  background: url('../assets/footer-bg.png');
+.footer-container {
+  background: url("../assets/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.footer-content{
+.footer-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 120px;
   gap: 32px;
 }
-.footer-logo{
-  width:410px;
+.footer-logo {
+  width: 410px;
 }
-.footer-icon{
+.footer-icon {
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.footer-icon-card{
+.footer-icon-card {
   gap: 8px;
 }
 
-@media screen and (max-width: 576px){
-  .footer-container{
+@media screen and (max-width: 576px) {
+  .footer-container {
     padding: 40px 20px;
   }
-.footer-content{
-  text-align: center;
-  padding: 25px;
-  gap: 32px;
-}
+  .footer-content {
+    text-align: center;
+    padding: 25px;
+    gap: 32px;
+  }
 
-.footer-icon{
-  justify-content: center;
-}
+  .footer-icon {
+    justify-content: center;
+  }
 
-.footer-logo{
-  width:220px;
-}
-
+  .footer-logo {
+    width: 220px;
+  }
 }
 /* footer part end */
 
+/* Animation */
+
+.btn-group .btn1 {
+  transform: translateX(-200px);
+  animation: slideInLeft 1s forwards;
+}
+
+.btn2 {
+  transform: translateX(200px);
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+  }
+}
