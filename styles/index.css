@@ -68,13 +68,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-    .primary-title{
-        font-size: 2rem;
-    }
+  .primary-title {
+    font-size: 2rem;
+  }
 
-    .secondary-title{
-        font-size: 1.5rem;
-    }
+  .secondary-title {
+    font-size: 1.5rem;
+  }
 }
 /* shared style part end */
 
@@ -210,7 +210,7 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
-  .podcast-container{
+  .podcast-container {
     padding: 40px 20px;
   }
 
@@ -248,8 +248,8 @@ hr {
   padding: 40px;
 }
 
-.techwave-card .primary-text{
-line-height: 25px;
+.techwave-card .primary-text {
+  line-height: 25px;
 }
 
 .tc1 {
@@ -266,33 +266,99 @@ line-height: 25px;
   grid-column: span 2;
 }
 
-@media screen and (max-width: 576px){
-    .techwave-container{
-        padding: 40px 20px;
-    }
-    
-    
-.techwave-card-container{
+@media screen and (max-width: 576px) {
+  .techwave-container {
+    padding: 40px 20px;
+  }
+
+  .techwave-card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
     margin-top: 16px;
-}
+  }
 
-.techwave-card{
+  .techwave-card {
     padding: 24px;
     border-radius: 24px;
-}
+  }
 }
 /* techwave part end */
 /* featured part start */
+.featured-container {
+  background: var(--bg);
+  padding: 120px 200px;
+}
 
+.episode-card-contaier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.episode-card {
+    width: 380px;
+  border-radius:24px;
+  background: rgba(37, 13, 68, 1);
+}
+
+.video{
+    border-radius: 24px 24px 0 0;
+}
+
+.episode-card-content{
+    padding: 24px;
+}
+
+.episode-card-content > .primary-text{
+    padding: 12px 0;
+}
+
+.clock{
+    align-items: center;
+    gap: 6px;
+}
+
+.host-card-container{
+    margin-top: 120px;
+    
+    
+}
+
+.host-card{
+    margin-top: 40px;
+    padding: 40px;
+    gap: 24px;
+    border-radius: 40px;
+background: rgba(53, 17, 101, 0.4);
+}
+
+.host-title{
+    color: var(--white);
+    font-size: 2rem;
+font-weight: 700;
+}
+
+.host-card .primary-text{
+    padding: 16px 0;
+}
+
+.host-content-img{
+gap: 8px;
+}
+
+.icon{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+border: 1px solid rgba(83, 60, 114, 1);
+}
 /* featured part end */
-/* part start */
+/*footer part start */
 
-/* part end */
-/* part start */
+/* footer part end */
 
-/* part end */
-/* part start */
-
-/* part end */
