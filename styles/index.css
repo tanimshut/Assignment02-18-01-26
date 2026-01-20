@@ -114,8 +114,6 @@ body {
   height: 760px;
 }
 
-.banner-img {
-}
 
 .hero-circle {
   position: relative;
@@ -315,8 +313,12 @@ hr {
 }
 
 .clock{
+  
     align-items: center;
     gap: 6px;
+}
+.clock .primary-text{
+  color: var(--green);
 }
 
 .host-card-container{
@@ -357,8 +359,48 @@ gap: 8px;
     box-sizing: border-box;
 border: 1px solid rgba(83, 60, 114, 1);
 }
+
+
+@media screen and (max-width: 576px) {
+ .featured-container{
+  padding: 40px 20px;
+ }
+  
+  .episode-card-contaier{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .host-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+}
+
 /* featured part end */
 /*footer part start */
+.footer-container{
+  background: url('../assets/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.footer-content{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  gap: 32px;
+}
+
+.footer-icon{
+  gap: 40px;
+}
+
+.footer-icon-card{
+  gap: 8px;
+}
 /* footer part end */
 
